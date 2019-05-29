@@ -1,10 +1,10 @@
-# Curso Java atSistemas 2018
+# Prueba de conocimiento API REST (Curso Java atSistemas)
 
 Este repositorio se usará para la realización de una prueba para mostrar los conocimientos adquiridos durante el curso. 
 A continuación se muestra las indicaciones para realizar la prueba:
 
 ## Requisitos
-- Es necesario tener instalado al menos la JDK 8
+- Es necesario tener instalado al menos la JDK 8 (o superior)
 - Es necesario tener instalado GIT
 - Es necesario tener instalado Maven ya sea de forma local o bien mediante la versión embebida que ofrecen algunos IDEs (por ejemplo Eclipse)
 
@@ -24,9 +24,11 @@ A continuación se muestra las indicaciones para realizar la prueba:
 - synopsis: Descripción breve del libro
 - pages: Numero de paginas que contiene el libro
 
+La respuesta del API debe contener las propiedades descritas en el modelo anterior para cumplir con los requisitos de las pruebas de correccion del ejecicio
+
 ## Control de errores
 - 400 (Bad request): La url que se ha usado no cumple con las especificaciones fijadas en el controlador
-- 404 (Not found): No existe en recurso que se busca
+- 404 (Not found): No existe el recurso que se busca
 
 ## Paginación
 A continuacion se muestra la paginacion que se ha usado en la solucion del problema descrito:
@@ -72,11 +74,3 @@ recurso será "/book" y el servidor se ejecutará bajo el puerto 8080.
 Ademas de lo anterior se debe permitir realizar busquedas por nombre a traves de la ruta "/book?name=harry". Se debera buscar todos los libros que contengan la palabra "harry" en su nombre.
 
 No se requiere conexion con base de datos ya que con el proyecto base proporcionado para hacer la prueba se autoconfigura una base de datos en memoria H2, por lo que no es necesario realizar ninguna configuracion de la aplicacion con base de datos.
-
-## Correccion de la prueba
-Para corregir la solucion implementada se proporciona una coleccion de pruebas para POSTMAN, para ejecutarlo importarlo desde la aplicacion (POSTMAN) y ejecutar todas las pruebas con un Runner (https://www.getpostman.com/docs/v6/postman/collection_runs/starting_a_collection_run)
-
-Para facilitar su uso se definio una variable de entorno en POSTMAN, por lo que para usar las pruebas es necesario que cree una variable de entorno "host" con la url donde se ejecuta su aplication, por ejemplo "localhost"
-
-## Solución
-Una vez finalizada la prueba se subirá el codigo al repositorio creando un tag (solucion) para su posterior uso, ya sea para otros cursos o para la comunidad de Github.
